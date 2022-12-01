@@ -44,10 +44,7 @@ namespace Day_1
         public static void starTwo()
         {
             var total = 0;
-            elves.Sort(delegate(Elf elf, Elf elf1)
-            {
-                return elf1.Calories.CompareTo(elf.Calories);
-            });
+            elves.Sort((elf, elf1) => elf1.Calories.CompareTo(elf.Calories));
 
             int i = 0;
             foreach (var elf in elves)
