@@ -7,9 +7,9 @@ namespace Day_1
 {
     public class ReturnInput
     {
-        public static void dayOne()
+        static List<Elf> elves = new List<Elf>();
+        public static void starOne()
         {
-            var elves = new List<Elf>();
             var data = System.IO.File.ReadAllLines(@"C:\projects\advent-of-code-2022\aoc-2022\input\Day1.txt");
             var calories = 0;
             var elf = 1;
@@ -29,16 +29,36 @@ namespace Day_1
             }
             elves.Add(new Elf(elf, calories));
             
-            var c = 0;
+            var mostCalories = 0;
             var previous = 0;
+            //Console.WriteLine("Id {0} Name {1}", listItem.ElfNr, listItem.Calories);
             foreach (var listItem in elves)
             {
-                //Console.WriteLine("Id {0} Name {1}", listItem.ElfNr, listItem.Calories);
                 if (listItem.Calories <= previous) continue;
                 previous = listItem.Calories;
-                c = listItem.Calories;
+                mostCalories = listItem.Calories;
             }
-            Console.WriteLine("The correct answer is: " + c);
+            Console.WriteLine("The correct answer is: " + mostCalories);
+        }
+
+        public static void starTwo()
+        {
+            var total = 0;
+            elves.Sort(delegate(Elf elf, Elf elf1)
+            {
+                return elf1.Calories.CompareTo(elf.Calories);
+            });
+
+            int i = 0;
+            foreach (var elf in elves)
+            {
+                if (i < 3)
+                {
+                    total += elf.Calories;
+                    i++;
+                }
+            }
+            Console.WriteLine("Top three elves combined: " + total);
         }
     }
 }
