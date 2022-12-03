@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 
-namespace Day_1
+namespace aoc_2022
 {
     public class ReturnInput
     {

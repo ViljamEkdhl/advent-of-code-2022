@@ -1,4 +1,4 @@
-﻿namespace Day_1
+﻿namespace aoc_2022
 {
     public class Elf
     {
