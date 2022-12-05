@@ -8,7 +8,7 @@ namespace aoc_2022
         {
 
             var day2 = new Day2();
-            day2.countScore(System.IO.File.ReadAllLines(@"C:\Egna_projekt\Advent-of-code\aoc-2022\input\Day2.txt"));
+            day2.CountScore2(System.IO.File.ReadAllLines(@"C:\Egna_projekt\Advent-of-code\aoc-2022\input\Day2.txt"));
 
         }
     }

@@ -48,6 +48,7 @@
     <ItemGroup>
       <Content Include="input\Day1.txt" />
       <Content Include="input\Day2.txt" />
+      <Content Include="input\Day3.txt" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
