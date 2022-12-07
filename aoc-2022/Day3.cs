@@ -53,7 +53,6 @@ namespace aoc_2022
                     return SuperAwesomePointThingie(character);
                 }
             }
-
             return 0;
         }
 

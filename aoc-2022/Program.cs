@@ -16,10 +16,15 @@ namespace aoc_2022
              Find the item type that appears in both compartments of each rucksack.
              What is the sum of the priorities of those item types?
             */
-            var day3 = new Day3(3, GetInput(3));
-            Console.WriteLine(day3._sum);
+            //var day3 = new Day3(3, GetInput(3));
+            //Console.WriteLine(day3._sum);
             
-            
+            /*Day4
+             
+              
+            */
+            var day4 = new Day4(GetInput(4));
+
         }
 
         private static IEnumerable<string> GetInput(int day)
